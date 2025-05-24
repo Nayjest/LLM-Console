@@ -1,11 +1,15 @@
 <p align="right">
-<a href="https://pypi.org/project/llm-cli/" target="_blank"><img src="https://badge.fury.io/py/llm-cli.svg" alt="PYPI Release"></a>
-<a href="https://github.com/Nayjest/llm-cli/actions/workflows/code-style.yml" target="_blank"><img src="https://github.com/Nayjest/llm-cli/actions/workflows/code-style.yml/badge.svg" alt="Pylint"></a>
-<a href="https://github.com/Nayjest/llm-cli/actions/workflows/tests.yml" target="_blank"><img src="https://github.com/Nayjest/llm-cli/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
-<a href="https://github.com/Nayjest/llm-cli/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/static/v1?label=license&message=MIT&color=d08aff" alt="License"></a>
+<a href="https://pypi.org/project/llm-console/" target="_blank"><img src="https://badge.fury.io/py/llm-console.svg" alt="PYPI Release"></a>
+<a href="https://github.com/Nayjest/LLM-Console/actions/workflows/code-style.yml" target="_blank"><img src="https://github.com/Nayjest/LLM-Console/actions/workflows/code-style.yml/badge.svg" alt="Code Style"></a>
+<a href="https://github.com/Nayjest/LLM-Console/actions/workflows/tests.yml" target="_blank"><img src="https://github.com/Nayjest/LLM-Console/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
+<a href="https://github.com/Nayjest/LLM-Console/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/static/v1?label=license&message=MIT&color=d08aff" alt="License"></a>
 </p>
 
-# 🤖 Command-line interface for LLMs
+# LLM-Console
+
+**LLM-Console** is a cross-platform vendor-agnostic command-line interface for LLMs.
+
+**Development Status**: bookmark it and go away, it is still in early development.
 
 ## ✨ Features
 
@@ -16,10 +20,15 @@
 
 
 ## 🚀 Quickstart
-### 1. Install the package
-
 ```bash
-pip install llm-cli
+# Install LLM Console via pip
+pip install llm-console
+
+# Run the interactive wizard to configure the connection to your language model.
+llm configure
+
+# Talk to your Language Model
+llm "Wazzup, LLM"
 ```
 
 ## 🤝 Contributing
