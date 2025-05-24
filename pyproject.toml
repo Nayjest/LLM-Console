@@ -1,0 +1,39 @@
+[tool.poetry]
+packages = [{ include = "lm_cli"}]
+[project]
+name = "llm-console"
+version = "0.0.1"
+description = "Command-line interface for LLMs with advanced features like tool calling, file handling, and more."
+readme = "README.md"
+keywords = ["llm", "large language models", "ai", "cli", "ai search", "gpt", "openai"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "ai-microcore~=4.0.0.dev11"
+]
+
+requires-python = ">=3.10"
+
+authors = [
+    { name = "Vitalii Stepanenko", email = "mail@vitalii.in" },
+]
+maintainers = [
+    { name = "Vitalii Stepanenko", email = "mail@vitalii.in" },
+]
+license = { file = "LICENSE" }
+
+[project.urls]
+"Source Code" = "https://github.com/Nayjest/llm-cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
