@@ -14,7 +14,7 @@
 ## ✨ Features
 
 - @todo
-- Flexible configuration via [`.env` file](.env.example)
+- Flexible configuration via [`.env` file](https://github.com/Nayjest/LLM-Console/blob/main/.env.example)
 - Extremely fast, parallel LLM usage
 - Model-agnostic (OpenAI, Anthropic, Google, local PyTorch inference, etc.)
 
