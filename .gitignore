@@ -6,3 +6,5 @@ venv
 storage
 dist
 docs
+.aico/*
+!.aico/project.json

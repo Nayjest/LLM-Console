@@ -1,0 +1,27 @@
+{
+    "src_folder": ".",
+    "work_folder": ".aico",
+    "ignore": [
+        ".aico",
+        ".git",
+        "__pycache__",
+        ".idea",
+        "venv",
+        ".pytest_cache",
+        ".coverage",
+        "coverage.xml",
+        ".pylintrc",
+        ".diff",
+        ".patch",
+        "node_modules",
+        "package-lock.json",
+        "dist",
+        "multi-build.py",
+        ".github/workflows/ai-code-review.yml",
+        ".github/workflows/code-style.yml",
+        "LICENSE",
+        ".flake8",
+        ".gitignore"
+    ],
+    "bot_personality": ""
+}
