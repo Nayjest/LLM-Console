@@ -21,7 +21,7 @@ def setup_logging():
 
     handler = logging.StreamHandler()
     handler.setFormatter(CustomFormatter())
-    logging.basicConfig(level=logging.INFO, handlers=[handler])
+    logging.basicConfig(level=logging.WARNING, handlers=[handler])
 
 
 def bootstrap():
@@ -31,7 +31,7 @@ def bootstrap():
     mc.configure(
         DOT_ENV_FILE=ENV_CONFIG_FILE,
         INTERACTIVE_SETUP=True,
-        USE_LOGGING=True,
+        USE_LOGGING=False,
         EMBEDDING_DB_TYPE=mc.EmbeddingDbType.NONE,
     )
     mc.logging.LoggingConfig.STRIP_REQUEST_LINES = [100, 15]
