@@ -17,8 +17,6 @@ classifiers = [
 ]
 dependencies = [
     "ai-microcore~=4.0.0.dev14",
-    "typer~=0.9.4",
-    "async-typer~=0.1.8",
     "rich~=13.6.0",
     "google-generativeai~=0.8.5",
     "anthropic~=0.52.0",
@@ -45,4 +43,4 @@ build-backend = "poetry.core.masonry.api"
 packages = [{ include = "lm_cli"}]
 
 [tool.poetry.scripts]
-ai-code-review = "lm_cli.cli:app"
+llm = "lm_cli.cli:app"

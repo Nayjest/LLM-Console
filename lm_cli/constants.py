@@ -1,3 +1,4 @@
 from pathlib import Path
 
-ENV_CONFIG_FILE = Path("~/.lm_console/.env").expanduser()
+APP_HOME = Path("~/.lm_console").expanduser()
+ENV_CONFIG_FILE = APP_HOME / '.env'
