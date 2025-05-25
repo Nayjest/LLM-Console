@@ -1,5 +1,3 @@
-[tool.poetry]
-packages = [{ include = "lm_console"}]
 [project]
 name = "llm-console"
 version = "0.0.2"
@@ -18,7 +16,10 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
-    "ai-microcore~=4.0.0.dev11"
+    "ai-microcore~=4.0.0.dev14",
+    "rich~=13.6.0",
+    "google-generativeai~=0.8.5",
+    "anthropic~=0.52.0",
 ]
 
 requires-python = ">=3.10"
@@ -37,3 +38,9 @@ license = { file = "LICENSE" }
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [{ include = "lm_cli"}]
+
+[tool.poetry.scripts]
+llm = "lm_cli.cli:app"

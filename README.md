@@ -25,10 +25,29 @@
 pip install llm-console
 
 # Run the interactive wizard to configure the connection to your language model.
-llm configure
+llm
 
 # Talk to your Language Model
 llm "Wazzup, LLM"
+```
+
+## Usage Examples
+
+```bash
+llm --mcp https://time.mcp.inevitable.fyi/mcp what is current time in Ukraine? answer in H:i:s, no additional text
+> 16:31:12
+```
+
+```
+>llm --mcp https://time.mcp.inevitable.fyi/mcp H:i time across a Europe, in valid toml, no text before of after toml
+[EuropeTime]
+London = "2024-06-10T13:38:23+01:00"
+Paris = "2024-06-10T14:38:23+02:00"
+Berlin = "2024-06-10T14:38:23+02:00"
+Madrid = "2024-06-10T14:38:23+02:00"
+Rome = "2024-06-10T14:38:23+02:00"
+Athens = "2024-06-10T15:38:23+03:00"
+Istanbul = "2024-06-10T16:38:23+03:00"
 ```
 
 ## 🤝 Contributing
