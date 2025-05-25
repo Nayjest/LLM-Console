@@ -1,17 +1,16 @@
 import asyncio
 import sys
-from collections import deque
 
 import microcore as mc
-from lm_cli.utils import print_stream
 from microcore import ui
-from pywin.framework.toolmenu import tools
-from rich.pretty import pprint
 
 from .bootstrap import bootstrap
+from .utils import print_stream
+
 
 def app():
     asyncio.run(main())
+
 
 async def main():
     bootstrap()
@@ -20,6 +19,7 @@ async def main():
         exit()
     args = sys.argv[1:]
     await ai(args)
+
 
 async def ai(args):
     prompt_parts = args.copy()
@@ -76,7 +76,7 @@ async def ai(args):
     while use_mcp:
         try:
             mcp_res = await llm_answer.to_mcp(mcp)
-        except mc.mcp.WrongMcpUsage as e:
+        except mc.mcp.WrongMcpUsage:
             break
         if mcp_res is not ...:
             hist.append(mc.AssistantMsg("MCP Response:"+mcp_res))
@@ -84,6 +84,7 @@ async def ai(args):
 
     if print_result:
         print(llm_answer)
+
 
 async def explore_mcp(mcp_url: str):
     print("Exploring MCP at:", ui.green(mcp_url), "...")
