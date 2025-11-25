@@ -5,9 +5,6 @@ import subprocess
 NAMES = [
     ["llm-console", "LLM-Console"],
     ["lm-console", "LM-Console"],
-    ["lm-term", "LM-Term"],
-    ["ai-command", "AI Command"],
-    ["lm-command", "LM Command"],
 ]
 FILES = [
     "pyproject.toml",
