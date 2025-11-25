@@ -16,7 +16,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
-    "ai-microcore~=4.0.0.dev14",
+    "ai-microcore~=4.0",
     "rich~=13.6.0",
     "google-generativeai~=0.8.5",
     "anthropic~=0.52.0",
